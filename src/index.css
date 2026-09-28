@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+ --color-page: #ffffff;
+ --color-panel: #f6f6f4;
+ --color-raised: #eeeeeb;
+ --color-line: #d6d6d1;
+ --color-ink: #181818;
+ --color-muted: #62625e;
+ --color-accent: #181818;
+ --font-serif: "Songti SC", "STSong", "Noto Serif SC", serif;
+ --font-sans: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+@layer base {
+ html { background: var(--color-page); color: var(--color-ink); font-family: var(--font-sans); }
+ body { margin: 0; min-width: 320px; }
+ button, a { -webkit-tap-highlight-color: transparent; }
+ button { cursor: pointer; }
+ button:focus-visible, a:focus-visible { outline: 2px solid #333333; outline-offset: 5px; }
+ ::selection { background: #181818; color: #fff; }
+}
